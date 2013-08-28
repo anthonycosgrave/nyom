@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NYOM</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="checkIfSupported();">
+ <noscript>
+        <p>Sorry, your browser does not support JavaScript.</p>
+ </noscript>
+ <div class="topGap">
+    <table class="tableWidth" cellpadding="2" cellspacing="2" border="0" align="center" style="background-color:white;">
+        <tr>
+            <td colspan="2" align="center">
+                <h2>Nyom</h2>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" width="50%">
+                Current Score:&nbsp;<span id= "score"></span>
+            </td>
+            <td align="right" width="50%">
+                High Score:&nbsp;<span id= "highScore"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="top" class="tableWidth" style="background-color: Black; color: White;" align="center">
+                <canvas id="gameCanvas" width="528px" height="528px"></canvas>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" class="title">How To Play</td>
+        </tr>         
+	<tr>
+	    <td colspan="2" class="instructions"align="center">Use <img alt="arrow keys" src ="images/arrow_keys.gif" id ="arrow_keys" /> to move the Nyom (<img src = "images/instructions_nyom.png" alt="instructions_nyom" id ="instructions_nyom" height="12" width="48" />) around.</td>
+	</tr>
+        <tr>
+            <td colspan="2" class="instructions" align="center">Eat food <img alt="food" src = "images/instructions_food.png" alt="instructions_food" id ="instructions_food" height="12" width="12" /> (10 points) and <img src = "images/instructions_rotter.png" alt = "instructions_rotter" id ="instructions_rotter" height="12" width="12" /> (25 points).</td>
+	</tr>
+        <tr>
+            <td colspan="2" class="instructions" align="center">The Nyom grows one block longer with every piece of food it eats.</td>
+	</tr>
+        <tr>
+            <td colspan="2" class="instructions" align="center">Yellow food (<img src = "images/instructions_rotter.png" alt = "instructions_rotter" id ="Img2" height="12" width="12" />) rots and turns bad (<img src = "images/instructions_rotted.png" alt = "instructions_rotted" id ="Img3" height="12" width="12" />). Bad food will kill you, so don't eat it!</td>
+	</tr>
+        <tr>
+	    <td colspan="2" class="instructions"align="center">Use the SPACE BAR to Pause / Unpause the game.</td>
+	</tr>
+        <tr>
+	    <td colspan="2">&nbsp;</td>
+        </tr>
+        
+    </table>
+ </div>
+<script type="text/javascript" src="scripts/ll.js"></script>
+<script type="text/javascript" src="scripts/game.js"></script>
+</body>
+</html>
